@@ -1,0 +1,73 @@
+<!doctype html>
+<html ⚡ lang="en-my">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1">
+        <title>Apple iPhone X Prices, Reviews and Specs in Malaysia | iPrice</title>
+        <link rel="stylesheet" href="tachyon.css">
+        <style amp-custom>
+           * {
+               box-sizing: border-box;
+           }
+            .swipe-carousel div[role=button]{
+                display: none;
+            }
+            .filter-active {
+                transform: translateX(100%);
+            }
+           @media screen and (min-width: 60em) {
+               .filter-panel{
+                   transform: translate(-100%,5rem);
+               }
+           }
+       </style>
+        <script src="v0.js"></script>
+        <script src="amp-carousel-0.1.js"></script>
+        <script src="amp-bind-0.1.js"></script>
+    </head>
+    <amp-state id="swipeData">
+        <script type="application/json">
+            {
+                "index": "1"
+            }
+        </script>
+    </amp-state>
+    <amp-carousel height="100vh" width="100vw" class="swipe-carousel"
+                           type="slides"
+        on="slideChange:AMP.setState({swipeData:{index: event.index}})"
+    >
+        <!--Main page-->
+        <div class="bg-red" [class]="'bg-red ' +(swipeData.index > 0 ? 'filter-active': '')">
+            <!--Filter header-->
+            <div>
+                Filter header
+            </div>
+            <!--Body-->
+            <div>
+                <!--Breadcrumb -->
+                <div>
+                    Breadcrumb
+                </div>
+                <!--Title-->
+                <div>
+                    Title
+                </div>
+            </div>
+            This is main page
+        </div>
+        <!--Filter-->
+        <div class="flex filter-panel ">
+            <div class="o-60 w3 bg-black dn-l">opacity .8</div>
+            <div class="bg-orange flex-grow-1 flex-l h4-l">
+                <div class="bg-pink">Brands</div>
+                <div class="bg-dark-pink">Price</div>
+                <div class="bg-dark-red">Store</div>
+                <div class="bg-dark-gray">Colour</div>
+                <div class="bg-dark-blue">Gender</div>
+            </div>
+        </div>
+    </amp-carousel>
+    <body>
+
+    </body>
+</html>
