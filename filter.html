@@ -22,6 +22,9 @@
       .filter-panel {
         transform: translate(-100%,5rem);
       }
+      .filter-active {
+      transform: translateX(0%);
+    }
     }
 
     .translateX-1 {
@@ -35,16 +38,48 @@
     .translateX-3 {
       transform: translateX(-51rem);
     }
-    .max-h100{
+
+    .max-h100 {
       max-height: 100vh;
     }
+
     @media screen and (min-width: 60em) {
-        #toggleFilter:checked + div, #toggleFilter:checked + div>div {
-         height: 16rem;
+      #toggleFilter:checked + div, #toggleFilter:checked + div > div {
+        height: 16rem;
       }
     }
+    #toggle-search-brands:checked + div{
+      display: block;
+    }
 
-  
+    .container {
+      display: flex;
+      margin: 0 auto;
+      padding: 5px;
+      max-width: 500px;
+      max-height: 300px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .item {
+      padding: 5px;
+      height: 50px;
+      flex-grow: 2;
+      line-height: 50px;
+    }
+
+    .item1 {
+      width: 225px;
+    }
+
+    .item2 {
+      width: 225px;
+    }
+
+    .item3, .item4, .item5, .item6, .item7, .item8 {
+      width: 150px;
+    }
   </style>
   <script src="v0.js"></script>
   <script src="amp-carousel-0.1.js"></script>
@@ -87,16 +122,53 @@
       <div class="o-30 w3 bg-black dn-l" on="tap: mainSwipe.goToSlide(index=0)">opacity .8</div>
       <!--Main filter-->
       <input type="checkbox" class="dn" id="toggleFilter" />
-      <div class="bg-orange flex-grow-1 relative  h2-l">
+      <div class="bg-white flex-grow-1 relative  h2-l">
         <div class="flex-l overflow-y-scroll overflow-y-hidden-l max-h100 h2-l "
              [class]="'flex-l overflow-y-scroll overflow-y-hidden-l max-h100 h2-l translateX-' + indexFilter">
-          <div class="bg-pink w-100 w5-l h5 h-auto-l">
+          <!--Brand filter-->
+          <div class="w-100 w5-l h5 h-auto-l relative overflow-hidden">
             <!--Header filter-->
-            <div><label for="toggleFilter">Brand</label></div>
+            <div class="pa3 pa1-l">
+              <label for="toggleFilter"><b class="f2 f5-l">Brands</b></label>
+            </div>
+            <div class="absolute top-1 right-1 f2  f5-l top-2-l w-100-l">
+              <label class="green underline right-0-l absolute-l" for="toggle-search-brands">Other</label>
+              <input type="checkbox" class="dn" id="toggle-search-brands" />
+              <div class="dn absolute top-0 right-0 w-100-l">
+                <input class="w-100-l" />
+              </div>
+            </div>
+            <!--main brand filter-->
+            <div class="flex flex-wrap f2 pa3 pa1-l mt4-l f5-l">
+              <div class="green pv3 ph4 pa2-l ba b--green br4"> Apple</div>
+              <div class="pv3 ph4 pa2-l ba b--white br4"> Asus</div>
+              <div class="pv3 ph4 pa2-l ba b--white br4"> BlackBerry</div>
+              <div class="pv3 ph4 pa2-l ba b--white br4"> DOOGEE</div>
+              <div class="pv3 ph4 pa2-l ba b--white br4"> Google</div>
+              <div class="pv3 ph4 pa2-l ba b--white br4"> HTC</div>
+              <div class="pv3 ph4 pa2-l ba b--white br4"> Huawei</div>
+              <div class="pv3 ph4 pa2-l ba b--white br4"> LEAGOO</div>
+              <div class="pv3 ph4 pa2-l ba b--white br4"> Lenovo</div>
+            </div>
+
           </div>
           <div class="bg-dark-pink w-100 w5-l h5 h-auto-l">
             <!--Header filter-->
-            <div><label for="toggleFilter">Store</label></div>
+            <!-- Iphone Models-->
+            <div class="container">
+              <div class="item "> Iphone Models</div>
+              <div class="item "> Other</div>
+              <div class="item "> X</div>
+              <div class="item "> 7</div>
+              <div class="item "> 8 Pus</div>
+              <div class="item "> 6</div>
+              <div class="item "> 6s</div>
+              <div class="item "> 5s</div>
+              <div class="item "> SE</div>
+              <div class="item "> 5c</div>
+              <div class="item "> 8</div>
+              <div class="item "> 4s</div>
+            </div>
           </div>
           <div class="bg-dark-red w-100 w5-l h5 h-auto-l">
             <!--Header filter-->
@@ -124,20 +196,20 @@
           <!--Reset-->
           <div class="w-50 h3 bg-green">Reset</div>
           <!--Done-->
-          <div class="w-50 h3 bg-red"  on="tap: mainSwipe.goToSlide(index=0)">Done</div>
+          <div class="w-50 h3 bg-red" on="tap: mainSwipe.goToSlide(index=0)">Done</div>
         </div>
       </div>
 
       <!--Navigation slide-->
       <div class="dn db-l">
         <!--Foward-->
-        <div class="absolute right-2 top-0 w2 h2 tc bg-white"
+        <div class="absolute right-2 top-0 w2 h2 tc bg-white pa2 ba b--light-silver br-100"
              on="tap: AMP.setState({ indexFilter: indexFilter != undefined ? indexFilter + 1 : 1 })">></div>
         <!--Back-->
-        <div class="absolute left-2 top-0 w2 h2 tc bg-white"
+        <div class="absolute left-2 top-0 w2 h2 tc bg-white pa2 ba b--light-silver br-100"
              on="tap: AMP.setState({ indexFilter: indexFilter-1})"><</div>
       </div>
-    
+
     </div>
   </amp-carousel>
 </body>
