@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="fragment" content="!">
   <title>Apple iPhone X Prices, Reviews and Specs in Malaysia | iPrice</title>
   <link rel="stylesheet" href="tachyon.css">
   <style amp-custom>
@@ -52,34 +54,6 @@
       display: block;
     }
 
-    .container {
-      display: flex;
-      margin: 0 auto;
-      padding: 5px;
-      max-width: 500px;
-      max-height: 300px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .item {
-      padding: 5px;
-      height: 50px;
-      flex-grow: 2;
-      line-height: 50px;
-    }
-
-    .item1 {
-      width: 225px;
-    }
-
-    .item2 {
-      width: 225px;
-    }
-
-    .item3, .item4, .item5, .item6, .item7, .item8 {
-      width: 150px;
-    }
   </style>
   <script src="v0.js"></script>
   <script src="amp-carousel-0.1.js"></script>
@@ -100,8 +74,22 @@
     <!--Main page-->
     <div class="bg-light-gray" [class]="'bg-light-gray ' +(swipeData.index > 0 ? 'filter-active': '')">
       <!--Filter header-->
-      <div>
-        Filter header
+      <div class="flex flex-wrap f2 pa3 dn-l">
+       <div class="green w-25-ns pa2 br4 b--solid tc" on="tap:mainSwipe.goToSlide(index = 1)"><b>Filter</b> <b class="red">1</b></div>
+        <div class="pa2">Popularity</div>
+        <div class="green ma2"> Price</div>
+        <div class="ma2">Relevance</div>
+      </div>
+      <!--reset-->
+      <div class="dn db-l">
+        <div class="flex flex-wrap green tc">
+          <div class="br4 b--solid pa2 bg-dark-green ma2 "><b>Reset</b></div>
+          <div class="mv2 pv2 tc"><b>|</b></div>
+          <div class="br4 b--solid pa2 ma2 ">Apple<b class="black">  X</b></div>
+          <div class="br4 b--solid pa2 ma2 "> 1100-3400 <b class="black">  X</b></div>
+          <div class="br4 b--solid pa2 ma2 "> Grey <b class="black">  X</b></div>
+          <div class="br4 b--solid pa2 ma2"> 16 <b class="black">  X</b></div>
+        </div>
       </div>
       <!--Body-->
       <div>
@@ -154,10 +142,12 @@
           </div>
           <div class="bg-dark-pink w-100 w5-l h5 h-auto-l">
             <!--Header filter-->
+            <div class="pa3 pa1-l f2 f5-l">
+              <label><b class="green">Iphone</b><b> Models</b></label>
+            </div>
+            <div class="green right-1 underline f2 f5-l"> Other</div>
             <!-- Iphone Models-->
             <div class="container">
-              <div class="item "> Iphone Models</div>
-              <div class="item "> Other</div>
               <div class="item "> X</div>
               <div class="item "> 7</div>
               <div class="item "> 8 Pus</div>
