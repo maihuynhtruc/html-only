@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accordian</title>
+    <link rel="stylesheet" href="tachyon.css">
+    <style>
+        #toggle-section-1:checked + div,
+        #toggle-section-2:checked + div,
+        #toggle-section-3:checked + div,
+        #toggle-section-4:checked + div,
+        #toggle-section-5:checked + div{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!--section 1-->
+    <div class="ph2">
+        <label for="toggle-section-1">
+            <h2>Section#1</h2>
+        </label>
+        <input type="radio" class="dn" id="toggle-section-1" name="level0" checked>
+        <div class="dn bg-blue pa2">
+            <!--section 3-->
+            <div class="ph2">
+                <label for="toggle-section-3">
+                    <h2>Child#1</h2>
+                </label>
+                <input type="checkbox" class="dn" id="toggle-section-3" checked>
+                <div class="dn bg-dark-red h4 pa2">
+
+                </div>
+            </div>
+            <!--section 4-->
+            <div class="ph2">
+                <label for="toggle-section-4">
+                    <h2>Child#2</h2>
+                </label>
+                <input type="checkbox" class="dn" id="toggle-section-4" checked>
+                <div class="dn bg-light-blue h4 pa2">
+
+                </div>
+            </div>
+            <!--section 5-->
+            <div class="ph2">
+                <label for="toggle-section-5">
+                    <h2>Child#3</h2>
+                </label>
+                <input type="checkbox" class="dn" id="toggle-section-5">
+                <div class="dn bg-yellow h4 pa2">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--section 2-->
+    <div class="ph2">
+        <label for="toggle-section-2">
+            <h2>Section#2</h2>
+        </label>
+        <input type="radio" class="dn" id="toggle-section-2" name="level0">
+        <div class="dn bg-red h4 pa2">
+
+        </div>
+    </div>
+</body>
+</html>
