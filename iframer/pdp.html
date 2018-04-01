@@ -23,16 +23,26 @@
             height: 12.5rem;
         }
         .w-fit-content{    width: fit-content;}
+        .min-h-4 { min-height: 8rem}
+
+        /*Not Small*/
+        @media screen and (min-width: 30em) {
+            .min-h-auto-ns { min-height: auto}
+            .ml-12-ns{ margin-left: 12rem}
+            .w-12-ns{ width: 12rem}
+            .h-12-ns{ height: 12rem}
+        }
     </style>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
 </head>
 <body>
     <header class="">
         <!--Banner-->
         <div id="banner" class="bg-green">
             <div class="mw9 flex center f2">
-                <div class="pl1 pl3-l pr2 pv2 flex justify-center yellow">
+                <div class="pl2 pl3-l pr2 pv2 flex justify-center yellow">
                     <span class="b lh-title dn db-ns">iFarmer</span>
                     <i class="fab fa-d-and-d lh-title dib"></i>
                     <div class="dn db-l pl3">
@@ -43,10 +53,10 @@
                     <input class="db w-100 br3 pl3 pr5">
                     <i class="fas fa-search green absolute top-06 right-1 lh-title"></i>
                 </div>
-                <div class="pv2 pr1 pr3-l">
+                <div class="pv2 pr2 pr3-l">
                     <i class="fas fa-shopping-cart white lh-title"></i>
                 </div>
-                <div class="dn-l pv2 pl2 pr1">
+                <div class="dn-l pv2 pl2 pr2">
                     <i class="fas fa-align-justify white lh-title"></i>
                 </div>
             </div>
@@ -75,7 +85,7 @@
         </div>
     </header>
 
-    <main class="mw9 center pa1 pa3-l">
+    <main class="mw9 center pa2 pa3-l">
 
         <!--Title-->
         <h1 class="f4 mv2 f3-l">Dầu Gấc Thiên Nhiên Tốt Cho Sức Khoẻ</h1>
@@ -111,8 +121,8 @@
             <!--detail area-->
             <div class="w-100 w-50-l order-1 order-0-l">
                 <!--description-->
-                <div class="pa2 dn db-ns h4 overflow-hidden mb2 f4 lh-title">
-                    <div>
+                <div class="pa2 dn db-ns h4 overflow-hidden mb2 ">
+                    <p class="f4 ma0 lh-title normal">
                         Dầu gấc tinh khiết có chứa Beta Caroten 150 mg%, Lycopen, Vitamin E(Alphatocopherol 12 mg%), rất nhiều chất béo thực vật như Oleic 14,4%; Linoleic 14,7%; Stearic 7,69%; Palmatic 33,38%... và các vi chất rất cần thiết cho cơ thể con người.
 
                         Beta-Caroten (tiền Vitamin A): cao gấp 1,8 lần so với dầu gan cá thu, 10 lần so với cà rốt, là Beta-caroten thiên nhiên nên có tác dụng chống lão hóa mạnh, đồng thời bổ sung Vitamin A.
@@ -123,7 +133,7 @@
                         Các nguyên tố vi lượng như: cobon, sắt, kẽm, selen,...
                         Các nghiên cứu gần đây cũng cho thấy rằng hàm hượng protein trong gấc có tác dụng ngăn ngửa tế bào ung thư.
 
-                    </div>
+                    </p>
                </div>
 
                 <!--Specs-->
@@ -152,6 +162,20 @@
                             </div>
                             <div class="br3 b--light-gray b--solid bw1 pa1 shadow-1 tc w4 dark-gray ma1 mr3 nowrap">
                                 <div>2lit <p class="ma1 green">Giá 950.000</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ph2">
+                        <p class="f4 b mv2">Dung môi </p>
+                        <div class="flex flex-wrap-l overflow-x-auto overflow-y-hidden">
+                            <div class="br3 b--light-blue b--solid bw1 pa1 shadow-1 tc w4 dark-gray ma1 nowrap">
+                                <div>Dầu <p class="ma1 green">Dừa</p></div>
+                            </div>
+                            <div class="br3 b--light-gray b--solid bw1 pa1 shadow-1 tc w4 dark-gray ma1 nowrap">
+                                <div>Dầu <p class="ma1 green">Oliu</p></div>
+                            </div>
+                            <div class="br3 b--light-gray b--solid bw1 pa1 shadow-1 tc w4 dark-gray ma1 nowrap">
+                                <div>Dầu <p class="ma1 green">Hướng Dương</p></div>
                             </div>
                         </div>
                     </div>
@@ -188,6 +212,268 @@
             </div>
         </section>
 
+        <!--BTF-->
+        <amp-accordion class="mt3">
+
+            <!--Comment Area-->
+
+            <!--Product news-->
+            <section expanded class="mb3">
+                <h2 class="f4 pa2">Tin tức về Dầu Gấc</h2>
+                <div>
+                    <div class="pa2 flex flex-column flex-row-l">
+                        <!--list items-->
+                        <section class="w-70-l">
+                            <div class="overflow-hidden">
+                                <div class="absolute  w4 h4 w-12-ns h-12-ns">
+                                    <amp-img class="br-100" width="8rem" height="8rem" layout="responsive" src="img/news/image1.jpeg"></amp-img>
+                                </div>
+                                <div class="min-h-4 min-h-auto-ns ml6 ml-12-ns pa2">
+                                    <div class="f4 overflow-hidden blue">Công dụng của dầu gấc đối với sức khỏe và sắc đẹp</div>
+                                    <div class="f7 gray mt1">31-12-2016</div>
+                                </div>
+                                <div class="box-3 h4 ml-12-ns pa2 lh-title overflow-hidden f6">
+                                    Dầu gấc không chỉ là một phương thuốc thiên nhiên tốt cho sức khỏe mà còn là một mỹ phẩm tự nhiên tuyệt vời cho việc làm đẹp. ... Công dụng của dầu gấc đối với sức khỏe và sắc đẹp. Với các thành phần dưỡng chất trong dầu gấc, bạn có thể sử dụng dầu gấc như một loại kem ủ để chăm sóc tóc.
+                                </div>
+                            </div>
+                            <div class="mt3 overflow-hidden">
+                                <div class="absolute  w4 h4 w-12-ns h-12-ns">
+                                    <amp-img class="br-100" width="8rem" height="8rem" layout="responsive" src="img/news/images2.jpeg"></amp-img>
+                                </div>
+                                <div class="min-h-4 min-h-auto-ns ml6 ml-12-ns pa2">
+                                    <div class="f4 overflow-hidden blue">Cách dể chống suy dinh dưỡng bằng dầu gấc cho bé</div>
+                                    <div class="f7 gray mt1">24-04-2017</div>
+                                </div>
+                                <div class="box-3 h4 ml-12-ns pa2 lh-title overflow-hidden f6">
+                                    Dầu ăn là một trong những dưỡng chất cần thiết không thể thiếu trong các bữa ăn hàng ngày cho trẻ ăn dặm. Hiện tại, trên thị trường có rất nhiều loại dầu ăn cho trẻ nên sẽ khiến mẹ khó khăn khi lựa chọn dầu ăn cho trẻ. Một trong những loại dầu ăn mẹ Viết hay sử dụng cho trẻ là dầu gấc vậy dầu gấc
+                                </div>
+                            </div>
+                            <div class="mt3 overflow-hidden">
+                                <div class="absolute  w4 h4 w-12-ns h-12-ns">
+                                    <amp-img class="br-100" width="8rem" height="8rem" layout="responsive" src="img/news/image3.jpeg"></amp-img>
+                                </div>
+                                <div class="min-h-4 min-h-auto-ns ml6 ml-12-ns pa2">
+                                    <div class="f4 overflow-hidden blue">Công dụng của trái gấc: Giúp bạn có làn da đẹp và đôi mắt sáng</div>
+                                    <div class="f7 gray mt1">15-02-2011</div>
+                                </div>
+                                <div class="box-3 h4 ml-12-ns pa2 lh-title overflow-hidden f6">
+                                    Dầu gấc viên nang vinaga dha đối với mắt: Sáng mắt, hỗ trợ phòng khô mắt, mờ mắt, phòng chống cận thị và các bệnh về mắt. • Sản phẩm dầu gấc viên nang vinaga đối với làm đẹp: Phòng chống lão hóa da, chảy xệ da, ngăn ngừa rụng tóc làm cho tóc luôn óng mượt mà mềm mại, phòng ngừa sạm da, ..
+                                </div>
+                            </div>
+
+
+                        </section>
+
+                        <!--more links-->
+                        <section class="w-30-l pa2 f5">
+                            <div class=" b">Đọc thêm</div>
+                            <div class=" pv3 overflow-hidden blue">Tác dụng của dầu gấc với mắt bạn cần biết </div>
+                            <hr class="mh3 bg-light-blue">
+                            <div class=" pv3 overflow-hidden blue">Dầu gấc,tác dụng:Bổ mắt, chống lão hóa,ngừa ung thư,tốt cho da</div>
+                            <hr class="mh3 bg-light-blue">
+                            <div class=" pv3 overflow-hidden blue">5 Tác dụng của dầu gấc đối với sức khỏe và làm đẹp</div>
+                            <hr class="mh3 bg-light-blue">
+                            <div class=" pv3 overflow-hidden blue">Cách làm dầu gấc nguyên chất tại nhà cho bé nấu cháo ăn dặm</div>
+                            <hr class="mh3 bg-light-blue">
+                            <div class=" pv3 overflow-hidden blue">Hướng dẫn cách làm tinh dầu gấc trị mụn và làm mờ vết thâm hiệu quả</div>
+                        </section>
+                    </div>
+
+                </div>
+            </section>
+
+            <!--Product detail-->
+            <section expanded class="mb3" >
+                <h2 class="f4 pa2">Mô tả chi tiết về Dầu Gấc</h2>
+                <!--Content-->
+                <article class="pa2">
+                    <h3 class="f5 mv2 mh0">Dầu gấc</h3>
+                    <p class="ma2">Dầu gấc là một loại dầu được chiết tách từ quả gấc.</p>
+
+                    <h3 class="f5 mv2 mh0">Thành phần</h3>
+                    <p class="ma2">
+                        Dầu gấc tinh khiết có chứa Beta Caroten 150 mg%, Lycopen, Vitamin E(Alphatocopherol 12 mg%), rất nhiều chất béo thực vật như Oleic 14,4%; Linoleic 14,7%; Stearic 7,69%; Palmatic 33,38%... và các vi chất rất cần thiết cho cơ thể con người.
+                        <ul>
+                            <li>Beta-Caroten (tiền Vitamin A): cao gấp 1,8 lần so với dầu gan c&aacute; thu, 10 lần so với c&agrave; rốt, l&agrave; Beta-caroten thi&ecirc;n nhi&ecirc;n n&ecirc;n c&oacute; t&aacute;c dụng chống l&atilde;o h&oacute;a mạnh, đồng thời bổ sung Vitamin A.</li>
+                            <li>Lycopen: Cao gấp 70 lần so với c&agrave; chua, đến mức c&oacute; thể kết tinh th&agrave;nh tinh thể. L&agrave; chất Carotenoid c&oacute; khả năng chống l&atilde;o h&oacute;a, ngăn ngừa chứng nhồi m&aacute;u cơ tim v&agrave; bảo về Gene khỏi tổn thương.</li>
+                            <li>Vitamin E ở dạng &alpha; tocopherol: đ&acirc;y ch&iacute;nh l&agrave; vitamin E thi&ecirc;n nhi&ecirc;n n&ecirc;n c&oacute; t&aacute;c dụng mạnh hỗ trợ sự ph&aacute;t triển của cơ quan s&igrave;nh sản v&agrave; l&agrave;m đẹp da.</li>
+                            <li>Acid Linoleic (omega 6): C&ograve;n gọi l&agrave; Vitamin F gi&uacute;p bền vững th&agrave;nh mạch m&aacute;u, ngăn ngừa c&aacute;c bệnh về tim mạch, gi&uacute;p hạ cholesterol m&aacute;u.</li>
+                            <li>Acid Oleic (Omega 9): gi&uacute;p ph&aacute;t triển hệ thần kinh v&agrave; c&aacute;c loại sợi c&oacute; Myelin. Đặc biệt tốt cho b&agrave; mẹ mang thai v&agrave; cho con b&uacute;, trẻ sơ sinh v&agrave; trẻ nhỏ.</li>
+                            <li>C&aacute;c nguy&ecirc;n tố vi lượng như: cobon, sắt, kẽm, selen,...</li>
+                            <li>C&aacute;c nghi&ecirc;n cứu gần đ&acirc;y cũng cho thấy rằng h&agrave;m hượng protein trong gấc c&oacute; t&aacute;c dụng ngăn ngửa tế b&agrave;o ung thư.</li>
+                        </ul>
+                    </p>
+                    <h3 class="f5 mv2 mh0">Công dụng của dầu gấc</h3>
+                    <p class="ma2">
+                        <ul>
+                            <li>T&aacute;c dụng đối với mắt: ph&ograve;ng chữa kh&ocirc; mắt, tho&aacute;i h&oacute;a ho&agrave;ng điểm, gi&uacute;p mắt s&aacute;ng v&agrave; khỏe (nhờ t&aacute;c dụng của beta-caroten, tiền vitamin A).</li>
+                            <li>Trong massage: Ph&ograve;ng chữa sạm da, n&aacute;m da, mụn trứng c&aacute;, da kh&ocirc;, da nổi sần, ch&oacute;c vảy. C&oacute; t&aacute;c dụng dưỡng da, bảo vệ da, gi&uacute;p da lu&ocirc;n hồng h&agrave;o, tươi trẻ v&agrave; mịn m&agrave;ng. Ph&ograve;ng chữa rụng t&oacute;c, l&agrave;m t&oacute;c mềm mại.</li>
+                            <li>Tăng sức đề kh&aacute;ng cho da, chống lại c&aacute;c t&aacute;c nh&acirc;n g&acirc;y hại từ m&ocirc;i trường cho da như nắng n&oacute;ng, kh&oacute;i bụi, &ocirc; nhiễm,... M&aacute;t xa Dầu Gấc đặc biệt ph&ograve;ng chống l&atilde;o h&oacute;a da, ngăn hiện tượng ch&aacute;y nắng v&agrave; g&igrave;n giữ l&agrave;n da khỏe mạnh. Beta-Caroten v&agrave; Lycopen l&agrave; c&aacute;c chất Carotenoid, loại chất chống oxy h&oacute;a thực vật c&oacute; t&aacute;c dụng dọn sạch thường xuy&ecirc;n c&aacute;c sản phẩm oxy h&oacute;a l&agrave;m l&atilde;o h&oacute;a da, g&acirc;y ung thư da, g&acirc;y c&aacute;c bệnh vi&ecirc;m nhiễm.</li>
+                            <li>B&ecirc;n cạnh t&aacute;c dụng của dầu gấc l&agrave;m l&agrave;n da trắng hồng rạng rỡ, c&aacute;c chấy carotenoid trong gấc c&ograve;n gi&uacute;p bảo vệ tim mạch v&agrave; c&aacute;c gen trong cơ thể.</li>
+                            <li>Ph&ograve;ng chữa, ngăn ngừa chứng vi&ecirc;m v&agrave; ph&aacute; hủy DNA trong c&aacute;c tế b&agrave;o da khi tiếp x&uacute;c &aacute;nh nắng. - K&iacute;ch th&iacute;ch sinh ra lớp m&ocirc; mới, l&agrave;m vết thương mau l&agrave;nh, chữa c&aacute;c vết bỏng, vết lo&eacute;t, nứt...</li>
+                            <li>Một số nghi&ecirc;n cứu của c&aacute;c nh&agrave; nghi&ecirc;n cứu người Mỹ được c&ocirc;ng bố gần đ&acirc;y cho thấy c&aacute;c hợp chất của Beta-Caroten, Lycopen, Vitamin E... c&oacute; trong dầu Gấc c&oacute; t&aacute;c dụng l&agrave;m v&ocirc; hiệu h&oacute;a 75% c&aacute;c chất g&acirc;y ung thư n&oacute;i chung như ung thư v&uacute;, ung thư tuyến tiền liệt.</li>
+                        </ul>
+                    </p>
+                </article>
+            </section>
+
+           <!--Product specs-->
+            <section expanded class="mb3">
+                <h2 class="f4 pa2">Thành phần Dầu Gấc</h2>
+                <div>
+                    <div class="pa2">
+                        <section class="mv2 flex flex-column flex-row-l bg-light-gray">
+                            <!--Name & Value-->
+                            <div class="flex flex-row flex-column-l w-30-l">
+                                <!--Name-->
+                                <h3 class="ma0 ba b--gray pa2 w-50-m flex-grow-1 b">Beta-Caroten (tiền Vitamin A)</h3>
+
+                                <!--Value-->
+                                <div class="ba b--gray pa2 w-50-m tc">150 mg%</div>
+                            </div>
+
+                            <!--More info-->
+                            <div class="dark-gray w-70-l ba b--gray pa2 lh-title">
+                                Cao gấp 1,8 lần so với dầu gan cá thu, 10 lần so với cà rốt, là Beta-caroten thiên nhiên nên có tác dụng chống lão hóa mạnh, đồng thời bổ sung Vitamin A.
+                            </div>
+                        </section>
+                        <section class="mv2 flex flex-column flex-row-l mt2">
+                            <!--Name & Value-->
+                            <div class="flex flex-row flex-column-l w-30-l">
+                                <!--Name-->
+                                <h3 class="ma0 ba b--gray pa2 w-50-m flex-grow-1 b">Lycopen</h3>
+
+                                <!--Value-->
+                                <div class="ba b--gray pa2 w-50-m tc">12 mg%</div>
+                            </div>
+
+                            <!--More info-->
+                            <div class="dark-gray w-70-l ba b--gray pa2 lh-title">
+                                Cao gấp 70 lần so với cà chua, đến mức có thể kết tinh thành tinh thể. Là chất Carotenoid có khả năng chống lão hóa, ngăn ngừa chứng nhồi máu cơ tim và bảo về Gene khỏi tổn thương.
+                            </div>
+                        </section>
+                        <section class="mv2 flex flex-column flex-row-l bg-light-gray mt2">
+                            <!--Name & Value-->
+                            <div class="flex flex-row flex-column-l w-30-l">
+                                <!--Name-->
+                                <h3 class="ma0 ba b--gray pa2 w-50-m flex-grow-1 b">Vitamin E</h3>
+
+                                <!--Value-->
+                                <div class="ba b--gray pa2 w-50-m tc">12 mg%</div>
+                            </div>
+
+                            <!--More info-->
+                            <div class="dark-gray w-70-l ba b--gray pa2 lh-title">
+                                Cao gấp 1,8 lần so với dầu gan cá thu, 10 lần so với cà rốt, là Beta-caroten thiên nhiên nên có tác dụng chống lão hóa mạnh, đồng thời bổ sung Vitamin A.
+                            </div>
+                        </section>
+                        <section class="mv2 flex flex-column flex-row-l mt2">
+                            <!--Name & Value-->
+                            <div class="flex flex-row flex-column-l w-30-l">
+                                <!--Name-->
+                                <h3 class="ma0 ba b--gray pa2 w-50-m flex-grow-1 b">Các nguyên tố vi lượng</h3>
+
+                                <!--Value-->
+                                <div class="ba b--gray pa2 w-50-m tc">cobon, sắt, kẽm, selen</div>
+                            </div>
+
+                            <!--More info-->
+                            <div class="dark-gray w-70-l ba b--gray pa2 lh-title">
+                                Các vi chất rất cần thiết cho cơ thể con người.
+                            </div>
+                        </section>
+                        <section class="mv2 flex flex-column flex-row-l bg-light-gray mt2">
+                            <!--Name & Value-->
+                            <div class="flex flex-row flex-column-l w-30-l">
+                                <!--Name-->
+                                <h3 class="ma0 ba b--gray pa2 w-50-m flex-grow-1 b">Acid Linoleic (omega 6)</h3>
+
+                                <!--Value-->
+                                <div class="ba b--gray pa2 w-50-m tc">12 mg%</div>
+                            </div>
+
+                            <!--More info-->
+                            <div class="dark-gray w-70-l ba b--gray pa2 lh-title">
+                                Còn gọi là Vitamin F giúp bền vững thành mạch máu, ngăn ngừa các bệnh về tim mạch, giúp hạ cholesterol máu.
+                            </div>
+                        </section>
+                        <section class="mv2 flex flex-column flex-row-l mt2">
+                            <!--Name & Value-->
+                            <div class="flex flex-row flex-column-l w-30-l">
+                                <!--Name-->
+                                <h3 class="ma0 ba b--gray pa2 w-50-m flex-grow-1 b">Acid Oleic (Omega 9)</h3>
+
+                                <!--Value-->
+                                <div class="ba b--gray pa2 w-50-m tc">150 mg%</div>
+                            </div>
+
+                            <!--More info-->
+                            <div class="dark-gray w-70-l ba b--gray pa2 lh-title">
+                                Giúp phát triển hệ thần kinh và các loại sợi có Myelin. Đặc biệt tốt cho bà mẹ mang thai và cho con bú, trẻ sơ sinh và trẻ nhỏ.
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </section>
+
+            <!--Related Product-->
+            <section expanded class="mb3">
+                <h2 class="f4 pa2">Các sản phẩm Dầu Gấc liên quan</h2>
+                <div>
+                    <div class="pa2">
+                        <amp-carousel height="300"
+                                      layout="fixed-height"
+                                      type="carousel">
+                            <div class="flex-column flex">
+                                <amp-img src="img/image1.jpeg"
+                                         width="200"
+                                         height="200"
+                                         alt="a sample image"></amp-img>
+                                <div class="tc mt3">
+                                    <div class="f4 b blue">Dầu Gấc loại 200ml</div>
+                                    <div class="green mt3">Giá 95.000</div>
+                                </div>
+
+                            </div>
+                            <div class="flex-column flex">
+                                <amp-img src="img/image2.jpeg"
+                                         width="200"
+                                         height="200"
+                                         alt="a sample image"></amp-img>
+                                <div class="tc mt3">
+                                    <div class="f4 b blue">Dầu Gấc loại 500ml</div>
+                                    <div class="green mt3">Giá 270.000</div>
+                                </div>
+
+                            </div>
+                            <div class="flex-column flex">
+                                <amp-img src="img/image3.jpeg"
+                                         width="200"
+                                         height="200"
+                                         alt="a sample image"></amp-img>
+                                <div class="tc mt3">
+                                    <div class="f4 b blue">Dầu Gấc loại 1lit</div>
+                                    <div class="green mt3">Giá 500.000</div>
+                                </div>
+
+                            </div>
+                            <div class="flex-column flex">
+                                <amp-img src="img/image1.jpeg"
+                                         width="200"
+                                         height="200"
+                                         alt="a sample image"></amp-img>
+                                <div class="tc mt3">
+                                    <div class="f4 b blue">Dầu Gấc loại 2lit</div>
+                                    <div class="green mt3">Giá 950.000</div>
+                                </div>
+
+                            </div>
+                        </amp-carousel>
+                    </div>
+                </div>
+            </section>
+        </amp-accordion>
     </main>
     <footer class="bg-blue h3">
 
