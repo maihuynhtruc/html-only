@@ -1223,8 +1223,8 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .bg-pink { background-color: #ff80cc; }
 .bg-light-pink { background-color: #ffa3d7; }
 .bg-dark-green { background-color: #137752; }
-.bg-green { background-color: #19a974; }
-.bg-light-green { background-color: #9eebcf; }
+.bg-green { background-color: #4E9B13; }
+.bg-light-green { background-color: #4E9B13; }
 .bg-navy { background-color: #001b44; }
 .bg-dark-blue { background-color: #00449e; }
 .bg-blue { background-color: #357edd; }
@@ -1235,6 +1235,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .bg-washed-yellow { background-color: #fffceb; }
 .bg-washed-red { background-color: #ffdfdf; }
 .bg-inherit { background-color: inherit; }
+.bg-ifarmer {background-color: #4E9B13;}
 /* 
   
    SKINS:PSEUDO
@@ -3350,3 +3351,30 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .v-btm-l { vertical-align: bottom; }
 }
 
+.topnav {
+    overflow: hidden;
+    background-color: #4E9B13;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    margin-right: 2px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius:12px 12px 0px 0px;
+    background-color: #000;
+}
+.topnav a:hover {
+    background-color: #4CAF50;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #4dd;
+    color: white;
+}
+footer a{text-decoration: none;}
